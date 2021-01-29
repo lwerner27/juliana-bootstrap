@@ -1,5 +1,45 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
-    background-color: brown;
+    background-color: #eee;
+}
+
+.landing {
+    height: 100vh;
+    background-image: url("../assets/tennessee.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+        font-size: 5rem;
+        letter-spacing: 2rem;
+        color: white;
+        text-align: center;
+    }
+
+    &__sub-title {
+        letter-spacing: 0.75rem;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+    }
+
+    &__button {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+.about {
+    &__img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 50%;
+    }
+
+    &__text {
+        @include font-size(1.6rem);
+    }
 }
