@@ -1,3 +1,4 @@
+$primary: #45819d;
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
@@ -29,6 +30,9 @@ body {
         left: 50%;
         top: 80%;
         transform: translate(-50%, 0%);
+        &:hover {
+            color: $primary;
+        }
     }
 }
 
@@ -42,4 +46,14 @@ body {
     &__text {
         @include font-size(1.6rem);
     }
+
+    .fab {
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.wolf {
+    background-color: $primary;
 }
