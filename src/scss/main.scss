@@ -57,3 +57,16 @@ body {
 .wolf {
     background-color: $primary;
 }
+
+.parallax-window {
+    height: 100vh;
+    background: none;
+}
+
+.parallax-img {
+    height: 100vh;
+    background-image: url(../assets/great_smoky_mountains.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
